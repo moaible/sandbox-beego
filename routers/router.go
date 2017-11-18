@@ -30,11 +30,6 @@ func init() {
 				&controllers.RabbitController{},
 			),
 		),
-		beego.NSNamespace("/samples",
-			beego.NSInclude(
-				&controllers.SampleController{},
-			),
-		),
 	)
 	beego.AddNamespace(ns)
 }
